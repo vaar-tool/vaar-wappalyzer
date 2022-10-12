@@ -1,4 +1,4 @@
-import time
+
 from typing import Callable, Dict, Iterable, List, Any, Mapping, Set, Union
 import json
 import logging
@@ -364,11 +364,8 @@ class Wappalyzer:
         detected_technologies = set()
 
         for tech_name, technology in list(self.technologies.items()):
-            start_time = time.time()
             if self._has_technology(technology, webpage):
                 detected_technologies.add(tech_name)
-            # print("--- %s seconds ---" % (time.time() - start_time))
-            # print(tech_name)
         detected_technologies.update(self._get_implied_technologies(detected_technologies))
 
         return detected_technologies
