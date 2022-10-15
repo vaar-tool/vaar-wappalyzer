@@ -1,8 +1,9 @@
 import time
 import requests
-from Wappalyzer import Wappalyzer, WebPage
+from Wappalyzer import Wappalyzer
+from Wappalyzer.webpage import WebPage
 
-wappalyzer = Wappalyzer.latest(force_update=False)
+wappalyzer = Wappalyzer(force_update=False)
 response = requests.get('https://w3schools.com')
 
 webpage = WebPage.new_from_response(response)

@@ -37,8 +37,7 @@ def _setup_logger(
 
 _setup_logger('python-Wappalyzer')
 
-from .Wappalyzer import Wappalyzer, analyze
+from .Wappalyzer import Wappalyzer
 from .webpage import WebPage
 __all__ = ["Wappalyzer", 
-           "WebPage", 
-           "analyze"]
+           "WebPage"]
