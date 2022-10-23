@@ -1,9 +1,9 @@
 import re
-from get_data import GetData
-from _common import IWebPage
-from constants import CATEGORIES
+from .get_data import GetData
+from ._common import IWebPage
+from .constants import CATEGORIES
 from typing import Dict, Mapping, Set, Iterable
-from fingerprint import Fingerprint, Technology, Category
+from .fingerprint import Fingerprint, Technology, Category
 
 
 class Wappalyzer:

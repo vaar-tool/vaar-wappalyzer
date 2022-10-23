@@ -1,6 +1,6 @@
 import requests
 from typing import Dict, Any
-from constants import CATEGORIES
+from .constants import CATEGORIES
 
 class StoreData:
     def get_latest_tech_data(self) -> Dict[str, Any]:

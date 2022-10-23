@@ -2,7 +2,7 @@ import os
 import json
 import pathlib
 from typing import List
-from store_data import StoreData
+from .store_data import StoreData
 from datetime import datetime, timedelta
 
 
