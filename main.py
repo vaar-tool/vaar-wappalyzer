@@ -1,7 +1,7 @@
 import time
 import requests
-from Wappalyzer.Wappalyzer import Wappalyzer
-from Wappalyzer import WebPage
+from _bs4 import WebPage
+from wappalyzer import Wappalyzer
 
 wappalyzer = Wappalyzer(force_update=False)
 response = requests.get('https://autovicity.com')

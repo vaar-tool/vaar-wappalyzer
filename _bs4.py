@@ -8,7 +8,7 @@ import logging
 from bs4 import BeautifulSoup, Tag as bs4_Tag # type: ignore
 from cached_property import cached_property # type: ignore
 
-from Wappalyzer._common import BaseWebPage, BaseTag
+from _common import BaseWebPage, BaseTag
 
 logger = logging.getLogger(name="python-Wappalyzer")
 
