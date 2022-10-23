@@ -1,14 +1,14 @@
 """
 Implementation of WebPage based on bs4, depends on lxml.
 """
-from typing import Iterable, Iterator, Mapping
+from typing import Iterable, Mapping
 #Just to check if it's available
 import lxml # type: ignore 
 import logging
 from bs4 import BeautifulSoup, Tag as bs4_Tag # type: ignore
 from cached_property import cached_property # type: ignore
 
-from ._common import BaseWebPage, BaseTag
+from Wappalyzer._common import BaseWebPage, BaseTag
 
 logger = logging.getLogger(name="python-Wappalyzer")
 
