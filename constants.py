@@ -1,5 +1,5 @@
 CATEGORIES = {
-    6: "Ecommerce",
-    11: "Blogs",
+    6: "eCommerce",
+    11: "Blog",
     62: "PaaS"
 }
