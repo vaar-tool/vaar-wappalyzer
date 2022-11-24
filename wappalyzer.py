@@ -1,9 +1,10 @@
 import re
-from .get_data import GetData
+from typing import Dict, Mapping, Set, Iterable, List
+
 from ._common import IWebPage
 from .constants import CATEGORIES
-from typing import Dict, Mapping, Set, Iterable
 from .fingerprint import Fingerprint, Technology, Category
+from .get_data import GetData
 
 
 class Wappalyzer:
@@ -104,7 +105,7 @@ class Wappalyzer:
 
         return all_implied_technologies
 
-    def analyze(self, webpage: IWebPage) -> Set[str]:
+    def analyze(self, webpage: IWebPage) -> List[str]:
         detected_technologies = set()
 
         for tech_name, technology in list(self.technologies.items()):
